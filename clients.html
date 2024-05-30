@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Clients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion des Clients</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="jeux.html">Jeux Vidéo</a></li>
+            <li><a href="reservations.html">Réservations</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+
+<form id="ajoutClientForm">
+    <h2>Ajouter un nouveau client</h2>
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" required><br>
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom" required><br>
+    <label for="telephone">Téléphone:</label>
+    <input type="text" id="telephone" name="telephone" required><br>
+    <label for="courriel">Courriel:</label>
+    <input type="email" id="courriel" name="courriel" required><br>
+    <button type="submit">Ajouter</button>
+</form>
+
+        </section>
+        <section>
+
+            <h2>Liste des clients</h2>
+            <ul id="listeClients">
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestion des Clients</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
