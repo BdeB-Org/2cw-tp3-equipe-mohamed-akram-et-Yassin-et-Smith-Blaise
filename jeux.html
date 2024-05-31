@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Jeux Vidéo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion des Jeux Vidéo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="jeux.html">Jeux Vidéo</a></li>
+            <li><a href="reservations.html">Réservations</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <!-- Formulaire pour ajouter un nouveau jeu -->
+            <form id="ajoutJeuForm">
+                <h2>Ajouter un nouveau jeu vidéo</h2>
+                <label for="nomJeu">Nom du jeu:</label>
+                <input type="text" id="nomJeu" name="nomJeu" required><br>
+                <label for="genreJeu">Genre:</label>
+                <select id="genreJeu" name="genreJeu" required>
+                    <option value="" disabled selected>Choisir un genre</option>
+                    <option value="Action-Adventure">Action-Adventure</option>
+                    <option value="Platformer">Platformer</option>
+                    <option value="RPG">RPG</option>
+                    <option value="Shooter">Shooter</option>
+                    <option value="Puzzle">Puzzle</option>
+                </select><br>
+                <label for="dateSortieJeu">Date de sortie:</label>
+                <input type="date" id="dateSortieJeu" name="dateSortieJeu" required><br>
+                <label for="editeurJeu">Éditeur:</label>
+                <input type="text" id="editeurJeu" name="editeurJeu" required><br>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+        <section>
+           
+            <h2>Liste des jeux vidéo</h2>
+            <ul id="listeJeux">
+           
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestion des Jeux Vidéo</p>
+    </footer>
+ 
+
+ 
+   
+</body>
+</html>
