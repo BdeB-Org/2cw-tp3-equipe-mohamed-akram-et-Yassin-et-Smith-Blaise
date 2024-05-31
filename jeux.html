@@ -52,7 +52,31 @@
     <footer>
         <p>&copy; 2024 Gestion des Jeux Vidéo</p>
     </footer>
- 
+    <script >
+        //AJOUT JEUX VIDEO
+        const ajoutJeuForm = document.getElementById('ajoutJeuForm');
+        ajoutJeuForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+     
+           
+            const nomJeu = document.getElementById('nomJeu').value;
+            const genreJeu = document.getElementById('genreJeu').value;
+            const dateSortieJeu = document.getElementById('dateSortieJeu').value;
+            const editeurJeu = document.getElementById('editeurJeu').value;
+     
+       
+            const jeu = {
+                nomJeu: nomJeu,
+                genreJeu: genreJeu,
+                dateSortieJeu: dateSortieJeu,
+                editeurJeu: editeurJeu
+            };
+     
+         
+            localStorage.setItem('nouveauJeu', JSON.stringify(jeu));
+     
+            window.location.href = 'reservations.html';
+        });</script>
 
  
    
