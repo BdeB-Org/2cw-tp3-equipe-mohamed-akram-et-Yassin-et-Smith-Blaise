@@ -1,0 +1,71 @@
+{
+
+    "categories": [
+      {
+        "id_categorie": 1,
+        "nom_categorie": "Action-Adventure"
+      },
+      {
+        "id_categorie": 2,
+        "nom_categorie": "Platformer"
+      },
+      {
+        "id_categorie": 3,
+        "nom_categorie": "RPG"
+      },
+      {
+        "id_categorie": 4,
+        "nom_categorie": "Shooter"
+      },
+      {
+        "id_categorie": 5,
+        "nom_categorie": "Puzzle"
+      }
+    ],
+    "jeu_video": [
+      {
+        "id_jeu": 1,
+        "nom": "The Legend of Zelda",
+        "genre": "Action-Adventure",
+        "date_sortie": "1986-02-21",
+        "editeur": "Nintendo"
+      },
+      {
+        "id_jeu": 2,
+        "nom": "Super Mario Bros.",
+        "genre": "Platformer",
+        "date_sortie": "1985-09-13",
+        "editeur": "Nintendo"
+      }
+    ],
+    "client": [
+      {
+        "id_client": 1,
+        "nom": "Akram",
+        "prenom": "Aymouch",
+        "telephone": "123-456-7890",
+        "courriel": "akram@example.com"
+      },
+      {
+        "id_client": 2,
+        "nom": "Sam",
+        "prenom": "Smith",
+        "telephone": "123-456-7890",
+        "courriel": "samsmith@example.com"
+      }
+    ],
+    "reservation": [
+      {
+        "id_reservation": 1,
+        "date_reservation": "2023-05-01",
+        "id_client": 1,
+        "id_jeu": 1
+      },
+      {
+        "id_reservation": 2,
+        "date_reservation": "2023-05-02",
+        "id_client": 2,
+        "id_jeu": 2
+      }
+    ]
+  }
