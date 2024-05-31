@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #dcdcdc; /* Couleur de la bannière */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333; /* Couleur du fond de la barre de navigation */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff; /* Couleur du texte de la barre de navigation */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+footer {
+    background-color: #666; /* Couleur du footer */
+    padding: 10px;
+    color: #fff; /* Couleur du texte du footer */
+    text-align: center;
+}
+/* Styles existants */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #dcdcdc; /* Couleur de la bannière */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333; /* Couleur du fond de la barre de navigation */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; /* Centrer les éléments de la navigation */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff; /* Couleur du texte de la barre de navigation */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: flex-start; /* Aligner le contenu au début */
+    justify-content: space-between; /* Espacement entre le texte et l'image */
+}
+
+footer {
+    background-color: #666; /* Couleur du footer */
+    padding: 10px;
+    color: #fff; /* Couleur du texte du footer */
+    text-align: center;
+    flex-shrink: 0; /* Empêche le rétrécissement du footer */
+}
+
+/* Styles supplémentaires */
+.text {
+    max-width: 60%;
+}
+
+.rounded-image {
+    max-width: 35%;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+/* Styles pour sticky footer */
+.content {
+    flex: 1 0 auto;
+}
