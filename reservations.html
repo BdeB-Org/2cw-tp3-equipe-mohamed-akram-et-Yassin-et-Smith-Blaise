@@ -39,6 +39,59 @@
     <footer>
         <p>&copy; 2024 Gestion des Réservations</p>
     </footer>
+    <script>
+     
+        const nouveauClient = JSON.parse(localStorage.getItem('nouveauClient'));
+         
+         
+        if (nouveauClient) {
+           
+            const tbodyReservations = document.getElementById('tbody_reservations');
+         
+            const nouvelleRangee = document.createElement('tr');
+         
+         
+            const celluleClient = document.createElement('td');
+            celluleClient.textContent = `${nouveauClient.nom} ${nouveauClient.prenom}`;
+            nouvelleRangee.appendChild(celluleClient);
+         
+         
+            tbodyReservations.appendChild(nouvelleRangee);
+         
+           
+        }
+         
+         
+         
+               
+         
+               
+            </script>
+            <script>
+               
+                const nouveauJeu = JSON.parse(localStorage.getItem('nouveauJeu'));
+           
+             
+                if (nouveauJeu) {
+                 
+                    const tbodyReservations = document.getElementById('tbody_reservations');
+           
+                    const nouvelleRangee = document.createElement('tr');
+           
+                    const celluleClient = document.createElement('td');
+                    celluleClient.textContent = "";
+                    nouvelleRangee.appendChild(celluleClient);
+           
+                    const celluleJeu = document.createElement('td');
+                    celluleJeu.textContent = `${nouveauJeu.nomJeu} (${nouveauJeu.genreJeu}) - ${nouveauJeu.editeurJeu}`;
+                    nouvelleRangee.appendChild(celluleJeu);
+           
+                   
+                    tbodyReservations.appendChild(nouvelleRangee);
+                }
+           
+             
+            </script>
  
 
    
